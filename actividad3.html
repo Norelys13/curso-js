@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<!-- Formulario realizar cotización -->
+<!-- Compra una PC / Portatil -->
+<!-- Existan campos obligatorios / no obligatorios -->
+<!-- Generar un cuadro de dialogo con la confirmación -->
+<!-- Aplicar estilos CSS -->
+<form id="formularioCotizacion"></form>
+
+<div>
+  <label for="nombre">nombre Completo</label>
+  <input type="text" id="nombre" name="nombre" minlength="3" required>
+</div>
+
+<div>
+  <label for="dni">DNI</label>
+  <input type="text" id="dni" name="dni" minlength="7" required>
+</div>
+
+<div>
+  <label for="correo">Correo electrónico</label>
+  <input type="text" name="correo" id="correo" required>
+</div>
+
+<div>
+  <label for="telefono">telefono</label>
+  <input type="text" name="telefono" id="telefono">
+</div>
+
+<div>
+  <label for="tipo">Tipo de Equipo</label>
+  <select name="tipo" id="tipo" required>
+    <option value="">Seleccione</option>
+    <option value="PC">PC</option>
+    <option value="Portatil">Portatil</option>
+  </select>
+</div>
+
+<div>
+  <label for="uso">Uso principal</label>
+  <select id="uso" name="uso">
+    <option value="">Seleccione una opción</option>
+    <option value="Estudios">Estudios</option>
+    <option value="Trabajo">Trabajo</option>
+    <option value="Diseño y edición">Diseño y edición</option>
+    <option value="Uso personal">Uso personal</option>
+  </select>
+</div>
+
+<div>
+  <label for="marca">Marca preferida</label>
+  <select id="marca" name="marca">
+    <option value="">Seleccione una marca</option>
+    <option value="HP">HP</option>
+    <option value="Lenovo">Lenovo</option>
+    <option value="samsung">Samsung</option>
+    <option value="MSI">MSI</option>
+    <option value="Otra">Otra</option>
+    </select>
+</div>
+
+<div>
+  <button type="submit">Enviar</button>
+  <button type="reset">Reiniciar</button>
+</div>
+
+</form>
+  
+</body>
+</html>
